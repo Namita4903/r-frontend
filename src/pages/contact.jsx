@@ -17,7 +17,7 @@ const Contact = () => {
     e.preventDefault();
     setStatus("Sending...");
     try {
-      const res = await axios.post("http://localhost:5001/api/contact/addContact", formData);
+      const res = await axios.post("https://r-backend-2.onrender.com/api/contact/addContact", formData);
       setStatus(res.data.message);
       setFormData({ name: '', email: '', message: '' });
     } catch (err) {

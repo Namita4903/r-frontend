@@ -23,7 +23,7 @@ const Dashboard = () => {
 
     const fetchAllowedDoctors = async () => {
       try {
-        const response = await axios.post("http://localhost:5001/api/auth/getAllowedDoctors", {
+        const response = await axios.post("https://r-backend-2.onrender.com/api/auth/getAllowedDoctors", {
           email: email,
         });
         setDoctorData(response.data); // Should be an array of doctor objects
@@ -48,7 +48,7 @@ const Dashboard = () => {
 
   const handleCheckout = async () => {
     try {
-      const response = await axios.post("http://localhost:5001/api/auth/getPayment", {
+      const response = await axios.post("https://r-backend-2.onrender.com/api/auth/getPayment", {
         amount: 100,
       });
 
@@ -87,7 +87,7 @@ setReportData(doc)
 
   try {
     // API call to log or send appointment data
-    const response = await axios.post("http://localhost:5001/api/auth/bookAppointment", {
+    const response = await axios.post("https://r-backend-2.onrender.com/api/auth/bookAppointment", {
       username,
       email,
       userId,

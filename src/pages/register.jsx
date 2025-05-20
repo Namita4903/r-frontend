@@ -40,7 +40,7 @@ const Register = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5001/api/auth/register",
+        "https://r-backend-2.onrender.com/api/auth/register",
         values
       );
 
@@ -77,7 +77,7 @@ const Register = () => {
     try {
       if (authResult.code) {
         const response = await axios.post(
-          `http://localhost:5001/api/auth/google?code=${authResult.code}`,
+          `https://r-backend-2.onrender.com/api/auth/google?code=${authResult.code}`,
           { role: googleRole } // send selected role to backend
         );
         console.log(response)

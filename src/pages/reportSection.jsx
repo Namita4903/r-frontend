@@ -57,7 +57,7 @@ const ReportSection = () => {
         image: formData.media,
       };
 
-      const response = await axios.post("http://localhost:5001/api/auth/report", payload, {
+      const response = await axios.post("https://r-backend-2.onrender.com/api/auth/report", payload, {
         headers: { "Content-Type": "application/json" },
       });
 
@@ -78,7 +78,7 @@ const ReportSection = () => {
 
   const fetchReports = async () => {
     try {
-      const res = await axios.get(`http://localhost:5001/api/auth/getSingleReportsPatient`, {
+      const res = await axios.get(`https://r-backend-2.onrender.com/api/auth/getSingleReportsPatient`, {
         params: { email: userEmail },
       });
       setReports(res.data.reports || []);

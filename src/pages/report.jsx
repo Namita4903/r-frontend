@@ -67,7 +67,7 @@ const userId=localStorage.getItem("userId")
         uploadedOfPatient:userEmail
       };
 
-      const response = await axios.post("http://localhost:5001/api/auth/report", payload, {
+      const response = await axios.post("https://r-backend-2.onrender.com/api/auth/report", payload, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -100,7 +100,7 @@ const userId=localStorage.getItem("userId")
   const fetchReports = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5001/api/auth/getSingleReportsPatient`,
+        `https://r-backend-2.onrender.com/api/auth/getSingleReportsPatient`,
         {
           params: { email:userEmail }, // Send the email as a query parameter
         }

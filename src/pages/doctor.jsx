@@ -59,7 +59,7 @@ const Doctor = () => {
    
     try {
       const response = await axios.get(
-        `http://localhost:5001/api/auth/getSingleReportsPatient`,
+        `https://r-backend-2.onrender.com/api/auth/getSingleReportsPatient`,
         {
           params: { email: user.email }, // Send the email as a query parameter
         }
@@ -80,7 +80,7 @@ const Doctor = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5001/api/doctor/request-access",
+        "https://r-backend-2.onrender.com/api/doctor/request-access",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -131,7 +131,7 @@ const Doctor = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:5001/api/auth/report",
+        "https://r-backend-2.onrender.com/api/auth/report",
         payload,
         {
           headers: { "Content-Type": "application/json" },
@@ -166,7 +166,7 @@ const Doctor = () => {
   const fetchUsersByDoctor = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5001/api/auth/getUsersByDoctor`,
+        `https://r-backend-2.onrender.com/api/auth/getUsersByDoctor`,
         {
           params: { doctorEmail },
         }

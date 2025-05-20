@@ -22,7 +22,7 @@ const ConfirmDoctorAccess = () => {
     const confirmAccess = async () => {
       try {
         const res = await axios.post(
-            "http://localhost:5001/api/doctor/confirm-access",
+            "https://r-backend-2.onrender.com/api/doctor/confirm-access",
             {
               email,
               doctorId,
