@@ -27,9 +27,9 @@ import Logo from "./assets/images/logo.jpg";
  import Image8 from "./assets/images/image8.jpg";
  import Image9 from "./assets/images/image9.png";
  import Profile from './assets/images/profile.png'
-import ConfirmDoctorAccess from "../admin-panel/src/page/ConfirmDoctorAcces/ConfirmDoctorAccess";
 //  import Doctor from "./assets/images/doctor.png";
 import {GoogleOAuthProvider} from "@react-oauth/google";
+import ConfirmDoctorAccess from "./pages/ConfirmDoctorAccess";
 
 const GoogleWrapper=()=>(
   <GoogleOAuthProvider clientId="841901412797-av03el1c3novg5j0mckvdmmcijhcdb7p.apps.googleusercontent.com">
