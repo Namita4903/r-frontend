@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: process.env.PORT ? parseInt(process.env.PORT) : 5174,
-    allowedHosts: ['trendify-frontend-22gf.onrender.com']
+    allowedHosts: ['r-frontend.onrender.com']
 
   }
 });
