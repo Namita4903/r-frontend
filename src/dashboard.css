@@ -1,0 +1,514 @@
+/* @import "tailwindcss";
+.body {
+    background-color: rgba(196, 217, 219, 0.7);
+}
+.dashboard-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 1.5rem;
+}
+
+.sidebar {
+    width: 280px;
+    background: #006d77;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #83c5be;
+}
+
+.subscription-box {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #83c5be;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.subscription-box h2 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.subscription-plan {
+    background: white;
+    color: #006d77;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.subscription-plan h3 {
+    margin: 0;
+}
+
+.subscription-plan p {
+    font-size: 0.9rem;
+}
+
+.subscription-plan button {
+    background: #006d77;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.subscription-plan button:hover {
+    background: #004b50;
+}
+
+.dashboard-content {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.dashboard-content h1 {
+    font-size: 2rem;
+    color: #006d77;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+
+}
+
+.user-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+}
+
+.dashboard-content p {
+    color: #555;
+    margin-bottom: 2rem;
+    margin-left: 170px;
+    margin-right: 50px;
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #83c5be;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 calc(50% - 1.5rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #006d77;
+    font-weight: 500;
+    font-size:larger;
+}
+
+.card p {
+    color: #555;
+    font-size: 20px;
+    margin-right: 100px;
+} */
+
+
+
+
+
+
+@import "tailwindcss";
+.body {
+    background-color: rgba(196, 217, 219, 0.7);
+}
+.dashboard-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 1.5rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.sidebar {
+    width: 280px;
+    background: #006d77;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background: #83c5be;
+    transform: translateX(5px);
+}
+
+.subscription-box {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #83c5be;
+    border-radius: 10px;
+    text-align: center;
+    /* animation: pulse 2s infinite ease-in-out; */
+}
+
+.subscription-box h2 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.subscription-plan {
+    background: white;
+    color: #006d77;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.subscription-plan h3 {
+    margin: 0;
+}
+
+.subscription-plan p {
+    font-size: 0.9rem;
+}
+
+.subscription-plan button {
+    background: #006d77;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.subscription-plan button:hover {
+    background: #004b50;
+    transform: scale(1.05);
+}
+
+.dashboard-content {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.dashboard-content h1 {
+    font-size: 2rem;
+    color: #006d77;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.user-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    animation: slideIn 0.5s ease-out;
+}
+
+.dashboard-content p {
+    color: #555;
+    margin-bottom: 2rem;
+    margin-left: 170px;
+    margin-right: 50px;
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #83c5be;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 calc(50% - 1.5rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #006d77;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.card p {
+    color: #555;
+    font-size: 20px;
+    margin-right: 100px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 991px) {
+    .dashboard-container {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-width: none;
+    }
+
+    .dashboard-content {
+        padding: 1.5rem;
+    }
+
+    .dashboard-content h1 {
+        margin-left: 0;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .dashboard-content p {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .user-icon {
+        right: 20px;
+        top: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .dashboard-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .dashboard-container {
+        gap: 1rem;
+    }
+
+    .sidebar {
+        padding: 1rem;
+    }
+
+    .sidebar h2 {
+        font-size: 1.3rem;
+    }
+
+    .subscription-box {
+        padding: 0.8rem;
+    }
+
+    .subscription-box h2 {
+        font-size: 1rem;
+    }
+
+    .subscription-plan {
+        padding: 0.8rem;
+    }
+
+    .subscription-plan p {
+        font-size: 0.8rem;
+    }
+
+    .dashboard-content {
+        padding: 1rem;
+    }
+
+    .dashboard-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .dashboard-content p {
+        font-size: 0.9rem;
+    }
+
+    .user-icon {
+        width: 50px;
+        height: 50px;
+        right: 15px;
+        top: 15px;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+        margin-right: 0;
+    }
+} 
+
+.doctor-table-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.doctor-table-wrapper.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.doctor-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.doctor-table th,
+.doctor-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.doctor-table th {
+  background-color: #f0f0f0;
+}
+
+.doctor-table button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.doctor-table button:hover {
+  background-color: #45a049;
+}
