@@ -120,7 +120,7 @@ setReportData(doc)
         <aside className="sidebar">
           <h2>User Dashboard</h2>
           <ul>
-            {/* Add navigation links here if needed */}
+          
           </ul>
 
           <div className="subscription-box">
