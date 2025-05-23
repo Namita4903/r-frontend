@@ -57,7 +57,7 @@
     background: #83c5be;
     border-radius: 10px;
     text-align: center;
-    
+   
 }
 
 .subscription-box h2 {
@@ -353,10 +353,6 @@
 
 
 
-
-
-/* Dashboard Page CSS */
-
 .dashboard-container {
   display: flex;
   height: 100vh;
@@ -438,44 +434,45 @@
   flex-wrap: wrap;
 }
 
-/* ✅ Media Queries Only for Non-Responsive Parts */
-
-@media screen and (max-width: 1024px) {
-  .sidebar {
-    display: none;
-  }
-
-  .dashboard-container {
-    flex-direction: column;
-  }
-
-  .user-section {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-}
+/* ✅ Media Queries Only for Unresponsive Table & Reports Section */
 
 @media screen and (max-width: 768px) {
-  .cards-container {
-    flex-direction: column;
+  .table-container {
+    overflow-x: auto;
   }
 
-  .button-group {
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .subscription-box {
-    padding: 15px;
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
     font-size: 14px;
+  }
+
+  .table-container th,
+  .table-container td {
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .subscription-box {
+    font-size: 14px;
+    padding: 15px;
   }
 
   .card {
-    padding: 15px;
     font-size: 14px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .table-container table {
+    font-size: 12px;
+  }
+
+  .table-container th,
+  .table-container td {
+    padding: 6px;
   }
 
   .greeting {
@@ -486,8 +483,13 @@
     font-size: 20px;
   }
 
-  .table-container {
-    padding: 10px;
+  .subscription-box {
     font-size: 13px;
+    padding: 12px;
+  }
+
+  .card {
+    font-size: 13px;
+    padding: 12px;
   }
 }
