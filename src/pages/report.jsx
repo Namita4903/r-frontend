@@ -194,7 +194,7 @@ const userId=localStorage.getItem("userId")
         </Button>
       </form>
 
-      <h3>dsds</h3>
+      <h3>Medical Reports</h3>
       <Table columns={columns} dataSource={reports} rowKey="_id" />
 
       <Modal
